@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===========================
+        BASIC META
+    ============================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nihala Feri | Social Media Marketer & UI Designer</title>
+
+    <meta name="description"
+        content="Official Portfolio of Nihala Feri  UI Designer and Digital Marketer.">
+
+    <meta name="keywords"
+        content="Flutter, Firebase, UI Designer, Portfolio, Developer, HTML, CSS, JavaScript">
+
+    <meta name="author" content="Nihala Feri">
+
+    <!-- ===========================
+        GOOGLE FONT
+    ============================ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ===========================
+        FONT AWESOME
+    ============================ -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- ===========================
+        AOS ANIMATION
+    ============================ -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- ===========================
+        CSS
+    ============================ -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ===========================
+        LOADER
+    ============================ -->
+
+    <div id="loader">
+
+        <div class="loader-circle"></div>
+
+        <h2>Loading Portfolio...</h2>
+
+    </div>
+
+    <!-- ===========================
+        SCROLL PROGRESS
+    ============================ -->
+
+    <div id="progress-bar"></div>
+
+    <!-- ===========================
+        CURSOR
+    ============================ -->
+
+    <div class="cursor"></div>
+
+    <!-- ===========================
+        BACKGROUND BLOBS
+    ============================ -->
+
+    <div class="blob blob1"></div>
+
+    <div class="blob blob2"></div>
+
+    <div class="blob blob3"></div>
+
+    <!-- ===========================
+        NAVBAR
+    ============================ -->
+
+    <header>
+
+        <nav class="navbar">
+
+        <div class="logo">
+            <h2>NF<span>.</span></h2>
+        </div>
+
+        <!-- Desktop + Mobile Menu -->
+
+        <div class="nav-menu" id="navMenu">
+
+            <ul class="nav-links">
+
+                <li><a href="#home" class="nav-link active">Home</a></li>
+
+                <li><a href="#about" class="nav-link">About</a></li>
+
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+    </header>
+
+    <!-- ===========================
+        HERO SECTION
+    ============================ -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left" data-aos="fade-right">
+
+            <p class="welcome">
+
+                👋 Hello, I'm
+
+            </p>
+
+            <h1>
+
+                Nihala <span>Feri</span>
+
+            </h1>
+
+            <h3>
+
+                <span id="typing"></span>
+
+            </h3>
+
+            <p class="hero-description">
+
+                Passionate Flutter Developer, UI Designer, and Digital Creator focused on building beautiful, fast, and user-friendly applications. I enjoy transforming ideas into elegant digital experiences that solve real-world problems.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary">
+
+                    View Projects
+
+                </a>
+
+                <a href="assets/resume.pdf"
+                    class="btn secondary"
+                    download>
+
+                    Download CV
+
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/Nihala163" aria-label="GitHub">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="https://www.linkedin.com/in/nihala-feri-153850240/" aria-label="LinkedIn">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="https://www.instagram.com/nihalaferi__/?hl=en" aria-label="Instagram">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a href="#" aria-label="Email">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right" data-aos="fade-left">
+
+            <div class="profile-card">
+
+                <div class="profile-glow"></div>
+
+                <img src="assets/Profile.JPEG"
+                    alt="Nihala Feri">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Scroll Indicator -->
+
+    <div class="scroll-down">
+
+        <a href="#about">
+
+            <i class="fa-solid fa-angles-down"></i>
+
+        </a>
+
+    </div>
+
+    <!-- ===========================
+        ABOUT SECTION
+    ============================ -->
+
+    <section id="about" class="about section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>ABOUT ME</span>
+
+                <h2>Who I Am</h2>
+
+                <p>
+                    I enjoy creating beautiful digital experiences that combine creativity with functionality.
+                </p>
+
+            </div>
+
+            <div class="about-wrapper">
+
+                <div class="about-image" data-aos="fade-right">
+
+                    <img src="assets/Profile2.JPEG" alt="Profile">
+
+                </div>
+
+                <div class="about-content" data-aos="fade-left">
+
+                    <h3>Hello! I'm Nihala 👋</h3>
+
+                    <p>
+
+                        I'm a passionate Flutter Developer, UI Designer, and Digital Creator who enjoys building
+                        responsive websites, mobile applications, and engaging user experiences. My focus is writing
+                        clean code, designing elegant interfaces, and continuously learning modern technologies.
+
+                    </p>
+
+                    <div class="about-info">
+
+                        <div>
+
+                            <strong>Name</strong>
+
+                            <span>Nihala Feri</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Email</strong>
+
+                            <span>nihalaferi163@gmail.com</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Location</strong>
+
+                            <span>Kozhikode, Kerala, India</span>
+
+                        </div>
+
+                        <div>
+
+                            <strong>Experience</strong>
+
+                            <span>Flutter • UI Design • Social Media Marketing • Graphic Designer  </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+        EXPERIENCE
+    ============================ -->
+
+    <section id="experience" class="experience section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>MY JOURNEY</span>
+
+                <h2>Experience</h2>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos="fade-right">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="year">2024</span>
+
+                        <h3>Flutter Developer</h3>
+
+                        <p>
+
+                            Built modern Flutter applications using Firebase, Provider,
+                            REST APIs and responsive UI components.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="year">2025</span>
+
+                        <h3>UI / Social Media Marketing & Graphic Designer</h3>
+
+                        <p>
+
+                            Designed responsive websites, dashboards,
+                            landing pages and marketing creatives.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <span class="year">2026</span>
+
+                        <h3>Digital Marketing</h3>
+
+                        <p>
+
+                            Worked on branding, SEO,
+                            Google Ads, social media campaigns and content design.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+      SKILLS
+ =========================== -->
+
+    <section id="skills" class="skills section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>MY SKILLS</span>
+
+                <h2>Technical Skills</h2>
+
+            </div>
+
+            <div class="skills-grid">
+
+                <!-- Flutter -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <h4>Flutter</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:95%;">
+                            <span>95%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Firebase -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-solid fa-fire"></i>
+
+                    <h4>Firebase</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%;">
+                            <span>90%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- HTML -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-brands fa-html5"></i>
+
+                    <h4>HTML5</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:95%;">
+                            <span>95%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <h4>JavaScript</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%;">
+                            <span>85%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- WordPress -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-brands fa-wordpress"></i>
+
+                    <h4>WordPress</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%;">
+                            <span>90%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Canva -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <h4>Canva</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:95%;">
+                            <span>95%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Adobe -->
+                <div class="skill-card" data-aos="zoom-in">
+
+                    <i class="fa-solid fa-pen-nib"></i>
+
+                    <h4>Adobe Creative Suite</h4>
+
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%;">
+                            <span>85%</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===========================
+        PROJECTS
+    ============================ -->
+
+    <section id="projects" class="projects section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>PORTFOLIO</span>
+
+                <h2>Featured Projects</h2>
+
+                <p>
+                    A selection of applications, websites and creative work that showcase my skills.
+                </p>
+
+            </div>
+
+            <div class="project-filter" data-aos="fade-up">
+
+                <button class="filter-btn" data-filter="design">Design</button>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card flutter" data-aos="zoom-in">
+
+                    <img src="assets/images/project1.jpg" alt="Educational Events">
+
+                    <div class="project-content">
+
+                        <div class="project-links">
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card flutter" data-aos="zoom-in" data-aos-delay="100">
+
+                    <img src="assets/images/project2.jpg" alt="Wallpaper App">
+
+                    <div class="project-content">
+
+                        <span>Flutter</span>
+
+                        <h3>Wallpaper App</h3>
+
+                        <p>
+                            Beautiful wallpaper application powered by the Unsplash API.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card web" data-aos="zoom-in" data-aos-delay="200">
+
+                    <img src="assets/images/project3.jpg" alt="Portfolio Website">
+
+                    <div class="project-content">
+
+                        <span>HTML • CSS • JavaScript</span>
+
+                        <h3>Modern Portfolio</h3>
+
+                        <p>
+                            Responsive portfolio website featuring glassmorphism, animations and dark mode.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+
+                            <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+        CERTIFICATES
+    ============================ -->
+
+    <section id="certificates" class="certificates section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>ACHIEVEMENTS</span>
+
+                <h2>Certificates</h2>
+
+            </div>
+
+            <div class="certificate-grid">
+
+                <div class="certificate-card" data-aos="flip-left">
+
+                    <img src="assets/certificates/certificate1.jpg" alt="Certificate 1">
+
+                    <h4>Flutter Development</h4>
+
+                </div>
+
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="100">
+
+                    <img src="assets/certificates/certificate2.jpg" alt="Certificate 2">
+
+                    <h4>Firebase</h4>
+
+                </div>
+
+                <div class="certificate-card" data-aos="flip-left" data-aos-delay="200">
+
+                    <img src="assets/certificates/certificate3.jpg" alt="Certificate 3">
+
+                    <h4>UI / UX Design</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+        PHOTOGRAPHY
+    ============================ -->
+
+    <section id="gallery" class="gallery section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>MY DESIGNS</span>
+
+                <h2>Moments Through My Lens</h2>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <img src="assets/images/gallery1.jpg" alt="Gallery Image 1">
+
+                <img src="assets/images/gallery2.jpg" alt="Gallery Image 2">
+
+                <img src="assets/images/gallery3.jpg" alt="Gallery Image 3">
+
+                <img src="assets/images/gallery4.jpg" alt="Gallery Image 4">
+
+                <img src="assets/images/gallery5.jpg" alt="Gallery Image 5">
+
+                <img src="assets/images/gallery6.jpg" alt="Gallery Image 6">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ===========================
+        CONTACT SECTION
+    ============================ -->
+
+    <section id="contact" class="contact section">
+
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+
+                <span>GET IN TOUCH</span>
+
+                <h2>Let's Work Together</h2>
+
+                <p>
+                    Have an idea, project or opportunity? I'd love to hear from you.
+                </p>
+
+            </div>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info" data-aos="fade-right">
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <div>
+
+                            <h4>Email</h4>
+
+                            <p>nihalaferi163@gmail.com</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-phone"></i>
+
+                        <div>
+
+                            <h4>Phone</h4>
+
+                            <p>+91 952638 1211</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-location-dot"></i>
+
+                        <div>
+
+                            <h4>Location</h4>
+
+                            <p>Kozhikode,Kerala, India</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-social">
+
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+<!--                        <a href="#"><i class="fab fa-x-twitter"></i></a>-->
+
+                    </div>
+
+                </div>
+
+                <form class="contact-form" data-aos="fade-left">
+
+                    <input type="text" placeholder="Your Name" required>
+
+                    <input type="email" placeholder="Your Email" required>
+
+                    <input type="text" placeholder="Subject">
+
+                    <textarea rows="6" placeholder="Your Message"></textarea>
+
+                    <button type="submit" class="btn primary">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+        FOOTER
+    ============================ -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-logo">
+
+                <h2>NF<span>.</span></h2>
+
+            </div>
+
+            <p>
+
+                Designed & Developed with ❤️ by <strong>Nihala Feri</strong>
+
+            </p>
+
+            <p>
+
+                © 2026 All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ===========================
+        BACK TO TOP
+    ============================ -->
+
+    <button id="backToTop">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+    <!-- ===========================
+        JAVASCRIPT LIBRARIES
+    ============================ -->
+
+    <!-- Typed.js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
